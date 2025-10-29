@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
-<style>
-body { font-family: Arial, sans-serif; padding:20px; max-width:400px; margin:0 auto; background-color:#1b202c; color:#bac7e4; }
-h1 { text-align:center; color:#d1dfff; }
-.input-container { display:flex; flex-direction:column; margin-top:20px; }
-input[type="text"], input[type="password"] { padding:10px; margin-bottom:10px; border:none; border-radius:5px; background-color:#13161f; color:#bac7e4; outline:none; }
-button { padding:10px; cursor:pointer; background-color:#37c886cc; color:#f8fafd; border:none; border-radius:5px; }
-button:hover { background-color:#37c886; }
-</style>
-</head>
-<body>
-<h1>Login</h1>
-<form method="POST" action="/login" class="input-container">
-<input type="text" name="username" placeholder="Benutzername" required>
-<input type="password" name="password" placeholder="Passwort" required>
-<button type="submit">Login</button>
-</form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+				max-width: 400px;
+				margin: 0 auto;
+				background-color: #1b202c;
+				color: #bac7e4;
+			}
+			h1 {
+				text-align: center;
+				color: #d1dfff;
+			}
+			.input-container {
+				display: flex;
+				flex-direction: column;
+				margin-top: 20px;
+			}
+			input[type="text"],
+			input[type="password"] {
+				padding: 10px;
+				margin-bottom: 10px;
+				border: none;
+				border-radius: 5px;
+				background-color: #13161f;
+				color: #bac7e4;
+				outline: none;
+			}
+			button {
+				padding: 10px;
+				cursor: pointer;
+				background-color: #37c886cc;
+				color: #f8fafd;
+				border: none;
+				border-radius: 5px;
+			}
+			button:hover {
+				background-color: #37c886;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Login</h1>
+		<form method="POST" action="/login" class="input-container">
+			<input type="text" name="username" placeholder="Benutzername" required />
+			<input type="password" name="password" placeholder="Passwort" required />
+			<button type="submit">Login</button>
+		</form>
+	</body>
 </html>
