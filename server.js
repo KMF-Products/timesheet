@@ -169,7 +169,11 @@ app.get('/all', async (req, res) => {
                 for (const t of times) {
                     const durationMinutes = Math.round(parseFloat(t.duration)*60)
                     jobTotalMinutes += durationMinutes
-                    timesHtml += `<li>${t.start_time} bis ${t.end_time} - ${formatHM(durationMinutes)}</li>`
+
+                    const startHM = t.start_time.slice(0,5)
+                    const endHM = t.end_time.slice(0,5)
+
+                    timesHtml += `<li>${startHM} bis ${endHM} - ${formatHM(durationMinutes)}</li>`
                 }
 
                 monthTotalMinutes += jobTotalMinutes
